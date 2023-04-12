@@ -1,6 +1,7 @@
 import './globals.css'
 import { Nunito } from 'next/font/google'
-import { Navbar } from './components'
+
+import { Modal, Navbar } from './components'
 
 export const metadata = {
   title: 'Airbnb',
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={font.className}>
+        <Modal title='Hey Gus!' isOpen />
         <Navbar />
         {children}
       </body>
